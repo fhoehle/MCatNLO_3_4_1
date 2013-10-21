@@ -13,7 +13,6 @@ mkdir $tarBallDir
   rm -rf Package341 
   patch < $mainDir/cmsswMCatNLO_3_4_1.patch
   chmod u+x MCatNLO.inputs
-  chmod -R a-w $installDir
 else if [ "X$1" == "Xclean" ]; then
   chmod -R u+w $installDir
   rm -rf $tarBallDir
